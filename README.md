@@ -138,6 +138,7 @@ Choose a path, then use the topic index for deeper reading. The order within eac
 - [Key Metrics for LLM Inference](https://handbook.modular.com/llm-inference-basics/llm-inference-metrics/) - LLM Inference Handbook chapter on latency, throughput, goodput and tail latency, with an interactive TPOT calculator.
 - [Reproducible Performance Metrics for LLM Inference](https://www.anyscale.com/blog/reproducible-performance-metrics-for-llm-inference) - Anyscale's case for measuring TTFT, inter-token latency and cost the same way across providers.
 - [vLLM Production Metrics](https://docs.vllm.ai/en/latest/usage/metrics/) - The Prometheus metrics vLLM exposes for queueing, latency, KV-cache usage and throughput.
+- [Benchmarking Done Properly](https://inferenceacademy.com/learn/inf-benchmarking/benchmarking-done-properly) - Free lesson on open-loop load generation, latency percentiles, goodput and reporting results others can reproduce.
 
 <a id="bottleneck-analysis"></a>
 
@@ -150,6 +151,7 @@ Choose a path, then use the topic index for deeper reading. The order within eac
 - [What Is the Roofline Model?](https://modal.com/gpu-glossary/perf/roofline-model) - Short definition of the roofline model with a worked diagram.
 - [GPU Performance Background User's Guide](https://docs.nvidia.com/deeplearning/performance/dl-performance-gpu-background/index.html) - NVIDIA's background guide to math-bound and memory-bound operations.
 - [All About Rooflines](https://jax-ml.github.io/scaling-book/roofline/) - Roofline analysis and arithmetic intensity applied to model workloads.
+- [Prefill, Decode and the Roofline](https://inferenceacademy.com/learn/inf-bottlenecks/prefill-decode-and-the-roofline) - Free lesson that predicts prefill and decode speed from FLOPs, bytes moved and arithmetic intensity, with worked GPU examples.
 
 <a id="optimization-overview"></a>
 
