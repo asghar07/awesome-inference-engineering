@@ -86,6 +86,7 @@ Choose a path, then use the topic index for deeper reading. The order within eac
 
 - [The Difference Between AI Training and Inference](https://nebius.com/blog/posts/difference-between-ai-training-and-inference) - How serving a trained model differs from training it.
 - [How LLM Inference Works](https://arpitbhayani.me/blogs/how-llm-inference-works/) - Prompt-to-response walkthrough of tokenization, embedding and autoregressive generation.
+- [What is LLM Inference?](https://handbook.modular.com/llm-inference-basics/what-is-llm-inference/) - LLM Inference Handbook intro to what inference is, with real-world examples and an interactive visualizer that follows one prompt to streamed output.
 
 <a id="transformers-and-attention"></a>
 
