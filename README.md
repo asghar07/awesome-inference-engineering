@@ -114,7 +114,7 @@ Choose a path, then use the topic index for deeper reading. The order within eac
 ### 1.4 Prefill, decode and serving modes
 
 - [Prefill vs Decode](https://redis.io/blog/prefill-vs-decode/) - Why prefill often hits compute limits and small-batch decode often hits memory-bandwidth limits; the balance changes with batching and workload.
-- [Using Asynchronous Inference in Production](https://www.baseten.co/blog/using-asynchronous-inference-in-production) - Queue-based inference for long-running or bursty workloads.
+- [Using Asynchronous Inference in Production](https://www.baseten.co/blog/using-asynchronous-inference-in-production/) - Queue-based inference for long-running or bursty workloads.
 - [vLLM OpenAI-Compatible Server](https://docs.vllm.ai/en/latest/serving/openai_compatible_server/) - The chat, completions and embeddings endpoints most engines now expose, including streaming responses.
 - [OpenAI-Compatible API](https://handbook.modular.com/model-interaction/openai-compatible-api/) - LLM Inference Handbook chapter on why the OpenAI API shape became the common interface for self-hosted models.
 - [Chat Templates](https://huggingface.co/docs/transformers/main/en/chat_templating) - How chat messages are rendered into the token sequence a model expects; a mismatched template silently degrades output.
@@ -148,7 +148,7 @@ Choose a path, then use the topic index for deeper reading. The order within eac
 - [Transformer Inference Arithmetic](https://kipp.ly/p/transformer-inference-arithmetic) - Back-of-the-envelope compute and memory math for transformer inference.
 - [How Fast Can We Perform a Forward Pass?](https://bounded-regret.ghost.io/how-fast-can-we-perform-a-forward-pass/) - Theoretical and practical limits on forward-pass latency.
 - [Making Deep Learning Go Brrrr From First Principles](https://horace.io/brrr_intro.html) - Separates compute, memory-bandwidth and overhead bottlenecks.
-- [A Guide to LLM Inference and Performance](https://www.baseten.co/blog/llm-transformer-inference-guide) - Ops:byte ratio, arithmetic intensity and memory bandwidth applied to choosing a GPU.
+- [A Guide to LLM Inference and Performance](https://www.baseten.co/blog/llm-transformer-inference-guide/) - Ops:byte ratio, arithmetic intensity and memory bandwidth applied to choosing a GPU.
 - [What Is the Roofline Model?](https://modal.com/gpu-glossary/perf/roofline-model) - Short definition of the roofline model with a worked diagram.
 - [GPU Performance Background User's Guide](https://docs.nvidia.com/deeplearning/performance/dl-performance-gpu-background/index.html) - NVIDIA's background guide to math-bound and memory-bound operations.
 - [All About Rooflines](https://jax-ml.github.io/scaling-book/roofline/) - Roofline analysis and arithmetic intensity applied to model workloads.
@@ -295,7 +295,7 @@ Choose a path, then use the topic index for deeper reading. The order within eac
 - [Common AI Model Formats](https://huggingface.co/blog/ngxson/common-ai-model-formats) - Comparison of GGUF, safetensors, PyTorch and ONNX formats.
 - [safetensors](https://github.com/safetensors/safetensors) - Safe, zero-copy tensor serialization format used by most open checkpoints.
 - [GGUF](https://github.com/ggml-org/ggml/blob/master/docs/gguf.md) - Specification of the single-file quantized model format used by llama.cpp.
-- [ONNX Runtime](https://github.com/microsoft/onnxruntime) - Cross-platform inference runtime for ONNX models.
+- [ONNX Runtime](https://onnxruntime.ai/) - Cross-platform inference runtime for ONNX models.
 - [TensorRT](https://github.com/NVIDIA/TensorRT) - NVIDIA SDK that compiles and optimizes models for inference on NVIDIA GPUs.
 - [OpenVINO](https://github.com/openvinotoolkit/openvino) - Intel toolkit for optimizing and running models on Intel CPUs, GPUs and NPUs.
 
@@ -339,7 +339,6 @@ Choose a path, then use the topic index for deeper reading. The order within eac
 - [ExecuTorch](https://github.com/pytorch/executorch) - PyTorch runtime for on-device inference on mobile and embedded hardware.
 - [MLC LLM](https://github.com/mlc-ai/mlc-llm) - Compiler-based deployment of LLMs to phones, browsers and GPUs.
 - [LiteRT-LM](https://github.com/google-ai-edge/LiteRT-LM) - Google AI Edge's open-source inference framework for running LLMs on edge devices.
-- [MediaPipe LLM Inference](https://developers.google.com/edge/mediapipe/solutions/genai/llm_inference) - Google AI Edge API for running LLMs on Android, iOS and the web.
 
 #### Browser
 
@@ -502,7 +501,7 @@ Choose a path, then use the topic index for deeper reading. The order within eac
 ### 4.5 Parallelism and communication
 
 - [vLLM Parallelism and Scaling](https://docs.vllm.ai/en/latest/serving/parallelism_scaling/) - Configuring tensor, pipeline, data and expert parallelism for single-node and multi-node vLLM deployments.
-- [How Multi-Node Inference Works for Massive LLMs like DeepSeek-R1](https://www.baseten.co/blog/how-multi-node-inference-works-llms-deepseek-r1) - A DeepSeek-R1 deployment using 16 H100s across two nodes, explaining the memory and communication choices in that configuration.
+- [How Multi-Node Inference Works for Massive LLMs like DeepSeek-R1](https://www.baseten.co/blog/how-multi-node-inference-works-llms-deepseek-r1/) - A DeepSeek-R1 deployment using 16 H100s across two nodes, explaining the memory and communication choices in that configuration.
 - [Megatron-LM](https://arxiv.org/abs/1909.08053) - **Paper, 2019**. The paper that defined intra-layer tensor parallelism for transformers.
 - [Shift Parallelism](https://arxiv.org/html/2509.16495v2) - **Paper, 2025**. Switching between tensor and data parallelism to balance latency and throughput.
 - [vLLM Large Scale Serving: DeepSeek @ 2.2k tok/s/H200 with Wide-EP](https://vllm.ai/blog/2025-12-17-large-scale-serving) - Wide expert parallelism, dual-batch overlap and disaggregated serving for DeepSeek on H200 clusters.
@@ -563,7 +562,7 @@ Choose a path, then use the topic index for deeper reading. The order within eac
 
 - [Vision Language Models Explained](https://huggingface.co/blog/vlms) - Hugging Face introduction to VLM architectures, training and how to choose one.
 - [Vision Language Models (Better, Faster, Stronger)](https://huggingface.co/blog/vlms-2025) - Hugging Face update on newer VLM trends, including any-to-any models, reasoning, small models and MoE decoders.
-- [Vision Language Models](https://www.baseten.co/inference-engineering/book/06-modalities/vision-language-models) - Inference Engineering book chapter on serving models that take images and video, and the cost of the vision encoder.
+- [Vision Language Models](https://www.baseten.co/inference-engineering/book/06-modalities/vision-language-models/) - Inference Engineering book chapter on serving models that take images and video, and the cost of the vision encoder.
 - [vLLM Multimodal Inputs](https://docs.vllm.ai/en/latest/features/multimodal_inputs/) - Passing images, video and audio to multimodal models in vLLM.
 - [Vision Language Model Prompt Engineering Guide for Image and Video Understanding](https://developer.nvidia.com/blog/vision-language-model-prompt-engineering-guide-for-image-and-video-understanding/) - NVIDIA guide to feeding single images, multiple images and video frames to VLMs.
 
@@ -669,7 +668,7 @@ Choose a path, then use the topic index for deeper reading. The order within eac
 
 ### 6.3 Gateways, routing and autoscaling
 
-- [The Baseten Inference Stack](https://www.baseten.co/resources/guide/the-baseten-inference-stack) - Runtime and infrastructure layers of a production stack, including geo-aware load balancing.
+- [The Baseten Inference Stack](https://www.baseten.co/resources/guide/the-baseten-inference-stack/) - Runtime and infrastructure layers of a production stack, including geo-aware load balancing.
 - [LiteLLM](https://github.com/BerriAI/litellm) - AI gateway and SDK that calls 100+ LLM APIs in OpenAI format, with load balancing and cost tracking.
 - [Agent Router (formerly Envoy AI Gateway)](https://github.com/theagentrouter/agent-router) - Unified access to generative AI services, built on Envoy Gateway.
 - [Portkey Gateway](https://github.com/Portkey-AI/gateway) - Open-source AI gateway with routing, retries, fallbacks and guardrails across LLM providers.
@@ -717,10 +716,10 @@ Choose a path, then use the topic index for deeper reading. The order within eac
 
 #### GPU clouds
 
-- [Serving Llama 3.1 with vLLM on Lambda](https://docs.lambda.ai/education/large-language-models/serving-llama-3-1-docker/) - Lambda's guide to running vLLM in Docker on on-demand A100 and H100 instances.
+- [Serving Llama 3.1 with vLLM on Lambda](https://docs.lambda.com/education/large-language-models/serving-llama-3-1-docker/) - Lambda's guide to running vLLM in Docker on on-demand A100 and H100 instances.
 - [About CoreWeave Inference](https://docs.coreweave.com/products/inference) - CoreWeave's options for serving models: serverless, dedicated, or self-managed on its Kubernetes service.
 - [vLLM on Vast.ai](https://docs.vast.ai/vllm-llm-inference-and-serving) - Vast.ai's template for serving LLMs with vLLM on marketplace GPUs.
-- [Serve LLM Inference on E2E GPU Nodes](https://docs.e2enetworks.com/docs/myaccount/gpu/guides/serve-llm-inference/) - E2E Networks' guide to serving an LLM on its GPU virtual machines.
+- [Serve LLM Inference on E2E GPU Nodes](https://docs.e2enetworks.com/myaccount/gpu-node/how-to/serve-llm-inference-on-a-gpu-node/) - E2E Networks' guide to serving an LLM on its GPU virtual machines.
 - [Rent a Cloud GPU for vLLM](https://cloudgpu.app/rent-gpu-for-vllm) - CloudGPU's guide to installing vLLM on a per-minute raw GPU instance with CUDA and root SSH and serving an OpenAI-compatible endpoint from it.
 
 #### Managed inference endpoints
@@ -728,7 +727,7 @@ Choose a path, then use the topic index for deeper reading. The order within eac
 - [RunPod Serverless vLLM](https://docs.runpod.io/serverless/vllm/overview) - Deploying an OpenAI-compatible vLLM endpoint on RunPod Serverless that scales with traffic.
 - [Replicate: Deploy a Custom Model](https://replicate.com/docs/get-started/deploy-a-custom-model) - Packaging a model with Cog and running it as a dedicated, autoscaling deployment on Replicate.
 - [Cog](https://github.com/replicate/cog) - Replicate's open-source tool for packaging models as production-ready containers.
-- [E2E Networks TIR Model Endpoints](https://docs.e2enetworks.com/docs/tir/Inference/ModelEndpoints/QuickStartGuide/) - Creating managed endpoints with vLLM, SGLang or Triton runtimes on E2E's TIR platform.
+- [E2E Networks TIR Model Endpoints](https://docs.e2enetworks.com/tir/model-endpoints/get-started/) - Creating managed endpoints with vLLM, SGLang or Triton runtimes on E2E's TIR platform.
 - [Modal: LLM Inference with vLLM](https://modal.com/docs/examples/llm_inference) - Modal's example of serving an OpenAI-compatible vLLM server on serverless GPUs.
 - [Baseten Model Deployment](https://docs.baseten.co/deployment/concepts) - Deploying models on Baseten with Truss, from a config file to an autoscaling API.
 - [Truss](https://github.com/basetenlabs/truss) - Baseten's open-source framework for packaging models into deployable containers.
@@ -805,7 +804,7 @@ Choose a path, then use the topic index for deeper reading. The order within eac
 
 ### 7.1 Courses and books
 
-- [Inference Engineering](https://www.baseten.co/inference-engineering/book) - Philip Kiely's book on building faster, cheaper and more reliable generative AI inference systems.
+- [Inference Engineering](https://www.baseten.co/inference-engineering/book/) - Philip Kiely's book on building faster, cheaper and more reliable generative AI inference systems.
 - [How To Scale Your Model](https://jax-ml.github.io/scaling-book/) - TPU/GPU architecture, communication and parallelism for training and inference.
 - [The Ultra-Scale Playbook](https://huggingface.co/spaces/nanotron/ultrascale-playbook) - Hugging Face's interactive guide to parallelism and communication for training LLMs on GPU clusters.
 - [Hands-On LLM Serving and Optimization](https://www.oreilly.com/library/view/hands-on-llm-serving/9798341621480/) - **Paid book**. Chi Wang and Peiheng Hu's O'Reilly book on hosting and optimizing LLMs at scale.

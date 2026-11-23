@@ -116,7 +116,7 @@ color = "#a78bfa"
     { name = "Transformers", logo = "gh", link = "https://github.com/huggingface/transformers" },
     { name = "safetensors", logo = "gh", link = "https://github.com/safetensors/safetensors" },
     { name = "GGUF", badge = "GGUF", sub = "ggml", link = "https://github.com/ggml-org/ggml/blob/master/docs/gguf.md" },
-    { name = "ONNX Runtime", logo = "onnxruntime.png", link = "https://github.com/microsoft/onnxruntime" },
+    { name = "ONNX Runtime", logo = "onnxruntime.png", link = "https://onnxruntime.ai/" },
     { name = "TensorRT", badge = "TRT", sub = "NVIDIA", link = "https://github.com/NVIDIA/TensorRT" },
     { name = "OpenVINO", logo = "gh", link = "https://github.com/openvinotoolkit/openvino" },
   ]
@@ -157,7 +157,6 @@ color = "#a78bfa"
     { name = "ExecuTorch", logo = "executorch.png", link = "https://github.com/pytorch/executorch" },
     { name = "MLC LLM", logo = "gh", link = "https://github.com/mlc-ai/mlc-llm" },
     { name = "LiteRT-LM", logo = "gh", link = "https://github.com/google-ai-edge/LiteRT-LM" },
-    { name = "MediaPipe LLM", badge = "MP", sub = "Google", link = "https://developers.google.com/edge/mediapipe/solutions/genai/llm_inference" },
   ]
 
   [[section.card]]
@@ -355,10 +354,10 @@ color = "#60a5fa"
     { name = "AWS (EKS)", logo = "gh:aws", link = "https://docs.aws.amazon.com/eks/latest/userguide/ml-inference-load-serve-model.html" },
     { name = "Google Cloud (GKE)", logo = "gh:GoogleCloudPlatform", link = "https://docs.cloud.google.com/kubernetes-engine/docs/how-to/deploy-gke-inference-gateway" },
     { name = "Azure (AKS)", logo = "gh:Azure", link = "https://learn.microsoft.com/en-us/azure/aks/ai-toolchain-operator" },
-    { name = "Lambda", logo = "lambda.png", link = "https://docs.lambda.ai/education/large-language-models/serving-llama-3-1-docker/" },
+    { name = "Lambda", logo = "lambda.png", link = "https://docs.lambda.com/education/large-language-models/serving-llama-3-1-docker/" },
     { name = "CoreWeave", logo = "gh:coreweave", link = "https://docs.coreweave.com/products/inference" },
     { name = "Vast.ai", logo = "gh:vast-ai", link = "https://docs.vast.ai/vllm-llm-inference-and-serving" },
-    { name = "E2E Networks", badge = "E2E", link = "https://docs.e2enetworks.com/docs/myaccount/gpu/guides/serve-llm-inference/" },
+    { name = "E2E Networks", badge = "E2E", link = "https://docs.e2enetworks.com/myaccount/gpu-node/how-to/serve-llm-inference-on-a-gpu-node/" },
   ]
 
   [[section.card]]
