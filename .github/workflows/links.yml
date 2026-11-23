@@ -11,10 +11,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      # Temporary excludes (added 2026-11-23): bentoml.com has no DNS records and the
+      # NVIDIA On-Demand session page returns 504. Remove once both load again.
       - name: Check links
         uses: lycheeverse/lychee-action@v2
         with:
-          args: '--verbose --no-progress --max-retries 2 --max-concurrency 8 --timeout 30 --accept 200..=299,403,429 --exclude-path .github --exclude "^https://github.com/org/repo$" "**/*.md"'
+          args: '--verbose --no-progress --max-retries 2 --max-concurrency 8 --timeout 30 --accept 200..=299,403,429 --exclude-path .github --exclude "^https://github.com/org/repo$" --exclude "^https://www\.bentoml\.com/" --exclude "^https://www\.nvidia\.com/en-us/on-demand/session/other25-dynamoday06/" "**/*.md"'
           fail: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
